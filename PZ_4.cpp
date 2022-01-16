@@ -74,29 +74,7 @@ int main()
 		return buf;
 	}
 
-	int main()
-	{
-		int v1_size = 0;
-		int v2_size = 0;
-
-		cout << "Enter a vector size:";
-		cin >> v1_size >> v2_size;
-
-		random_device rd;
-		mt19937 generator(rd());
-		uniform_int_distribution<> distribution(-100, 100);
-
-		vector<int> v1;
-		vector<int> v2;
-
-		for (int i = 0; i < v1_size; i++)
-			v1.push_back(distribution(generator));
-
-		for (int i = 0; i < v2_size; i++)
-			v2.push_back(distribution(generator));
-
-		cout << v1 << endl << v2 << endl << aver(v1) << endl << aver(v2) << endl << cross(v1, v2);
-
+	
         //stack
 
         class Graph
@@ -187,15 +165,5 @@ int main()
             stack <int> stk;
             vector<vector<int> > links;
         };
-
-        int main()
-        {
-            Graph graph;
-            graph.full();
-            graph.DFSTable();
-            graph.show();
-
-		return 0;
-	}
 
     return 0;
